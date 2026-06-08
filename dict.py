@@ -2,8 +2,8 @@ import requests
 
 response = requests.get("https://api.github.com/repos/kubernetes/kubernetes/pulls")
 
-output = response.json()
+outputs = response.json()
 
-for i in range(len(output)):
-    print(output[i]["user"]["login"])
+for i in range(len(outputs)):
+    print(outputs[i]["user"]["login"])
  
