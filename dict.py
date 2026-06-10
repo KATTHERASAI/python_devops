@@ -5,5 +5,5 @@ response = requests.get("https://api.github.com/repos/kubernetes/kubernetes/pull
 outputs = response.json()
 
 for i in range(len(outputs)):
-    print(outputs[i]["user"]["login"])
+    print(outputs[i]["user"]["login"], outputs[i]["user"]["id"])
  
